@@ -25,8 +25,8 @@ resource "aws_security_group" "project-iac-sg" {
     to_port     = 80
     cidr_blocks = ["0.0.0.0/0"]
   }
-  
-ingress {
+
+  ingress {
     from_port   = 22
     protocol    = "TCP"
     to_port     = 22
@@ -44,9 +44,9 @@ ingress {
     create_before_destroy = true
   }
   tags = {
-    git_commit           = "e1c211bdacb1b885b3cabe353e3d4145e55e0fba"
+    git_commit           = "909e77bd9f325948b2c459c07fdcb07d5dfd9793"
     git_file             = "main.tf"
-    git_last_modified_at = "2022-06-30 16:48:51"
+    git_last_modified_at = "2023-03-16 18:39:08"
     git_last_modified_by = "lindsey.smith@gmail.com"
     git_modifiers        = "lindsey.smith"
     git_org              = "turbodog"
